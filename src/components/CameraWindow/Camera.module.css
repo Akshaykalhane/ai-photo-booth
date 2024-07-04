@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --buttonBg:#034a8d;
+    --textColor:#fff;
+}
+
 
 body{
     margin: 0;
@@ -17,26 +22,37 @@ body{
 }
 
 .camera_window{
-    width: 80vw;
-    height: 56vw;
-    margin:7vw auto;
+    width: 90vw;
+    /* height: 56vw; */
+    margin: auto;
     /* border: 2px solid red; */
     padding: 4vw;
 }
 
+.camera_wrapper{
+    margin-top: 18vw;
+    /* border: 2px solid blue; */
+}
+
 .camera_screen{
     width: 100%;
+    /* height: 100%; */
     overflow: hidden;
     border-radius: .5vw;
     /* padding: 2vw; */
-    border: 1vw solid #415970;
+    border: 1vw solid var(--textColor);
     position: relative;
     top: 0;
     left: 0;
+    margin-top: 9vw;
+    margin-bottom: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button_control{
-    margin-top: 2vw;
+    margin-top: 7vw;
     display: flex;
     gap: 1vw;
     align-items: center;
@@ -44,21 +60,21 @@ body{
 }
 
 .button_control button{
-    width: 15vw;
-    font-size: 1.4vw;
+    width: 35vw;
+    font-size: 4.5vw;
     text-transform: uppercase;
     font-weight: 600;
     padding: 1.2vw;
     outline: none;
-    border-radius: 0.31vw;
+    border-radius: 0.41vw;
     border: none;
-    border: 3px solid #415970;
-    background-color: #1f3952;
+    border: 2px solid var(--textColor);
+    background-color: var(--buttonBg);
     color: #b4cfe7;
     cursor: pointer;
 }
 .button_control button:disabled{
-    color: #f0ecec54;
+    color: #f0ecec54 !important;
 }
 .webcam{
     width: 100%;
@@ -74,11 +90,12 @@ body{
 }
 
 .title_head{
-    margin: 3vw 0;
+    margin: 16vw 0 12vw 0;
 }
 
 .title_head h2{
-    font-size: 3vw;
+    font-size: 7.9vw;
     color: #b4cfe7;
     text-align: center;
+    letter-spacing: 0.2vw;
 }

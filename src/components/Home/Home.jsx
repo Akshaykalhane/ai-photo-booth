@@ -10,7 +10,8 @@ function Home() {
   return (
     <>
     <div className={styles.home_page}>
-            <h2>Super Hero A.I. Photo Booth</h2>
+        <div className={styles.home_wrapper}>
+            <h2>A.I. Photo Booth</h2>
            
             <div className={styles.image_wrapper}>
                 {images.map((item,id)=>(
@@ -38,6 +39,7 @@ function Home() {
               <Link to='/camera'>
               <button>start</button>
               </Link>  
+            </div>
             </div>
         </div>
     </>

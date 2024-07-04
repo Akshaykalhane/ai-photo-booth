@@ -1,52 +1,63 @@
-
+:root{
+    --buttonBg:#034a8d;
+    --textColor:#fff;
+}
 
 .home_page{
-    padding:2vw 2vw;
-    width: 90vw;
+    padding:4vw 4vw;
+    width: 95vw;
     margin: auto;
     /* border: 2px solid red; */
 }
 
 .home_page h2{
-    font-size: 4.3vw;
-    color: #b1daeb;
+    font-size: 9vw;
+    color: var(--textColor);
     margin:6vw 0;
     text-align: center;
+    letter-spacing: 0.3vw;
 }
-
+.template_wrapper{
+    /* border: 2px solid red; */
+    /* margin: auto; */
+    margin-top: 14vw ;
+}
 .image_wrapper{
+    /* border: 2px solid red; */
+    
+    margin-top: 5vw;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
     flex-wrap: wrap;
     gap: 1.2vw;
 }
 
 .hero_image{
-    width: 27.5vw;
+    width: 27.7vw;
 }
 
 .hero_image img{
     /* box-shadow: 0.3vw 0.2vw 1vw blue; */
     width: 100%;
     border-radius: 1.8vw;
-    border: 2px solid #1f3952;
+    border: 3px solid var(--textColor);
 }
 
 .button_start{
-    width: 20vw;
+    width: 38vw;
     /* border: 2px solid red; */
-    margin: 4vw auto;
+    margin: 9vw auto;
 }
 
 .button_start button{
     width: 100%;
     outline: none;
-    border: 3px solid #415970;
-    background-color: #1f3952;
-    padding: 1.2vw;
-    font-size: 2.2vw;
-    text-transform: uppercase;
+    border: 2px solid var(--textColor);
+    background-color: var(--buttonBg);
+    padding: 2.2vw 5vw;
+    font-size: 4.5vw;
+    text-transform: capitalize;
     border-radius: 0.55vw;
     color: #b4cfe7;
     cursor: pointer;
@@ -65,19 +76,19 @@
 }
 
 .selected_img{
-    border: 0.5vw solid rgb(83, 147, 219) !important;
+    border: 0.9vw solid rgb(168, 38, 207) !important;
 }
 
 .more_category_wrapper{
     /* border: 2px solid red; */
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 9vw;
+    margin-bottom: 7vw;
 }
 .category_navbar{
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 1vw;
+    gap: 3vw;
     margin-bottom: 1vw;
 }
 
@@ -90,20 +101,22 @@
     text-transform: capitalize;
     cursor: pointer;
     color: #b4cfe7;
-    background-color: transparent;
+    background-color: #0c365e;
 }
 
 .category_navbar select {
-    border: 2px solid #415970;
-    padding: 0.8vw;
-    background-color: #1f3952;
-    color: #b4cfe7;
+    border: 2px solid var(--textColor);
+    padding: 0.3vw;
+    background-color: var(--buttonBg);
+    color: #e9ecf0;
     border-radius: 0.6vw;
     outline: none;
-    font-size: 1.1vw;
+    font-size: 3.1vw;
+    
 }
 
 .category_navbar option{
+    font-size: 1vw;
     /* background-color: #1f3952; */
 }
 
