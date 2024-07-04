@@ -2,11 +2,13 @@ import React from 'react';
 import styles from '../../App.module.css';
 import { Link } from 'react-router-dom';
 import { images } from '../images/images';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Home() {
     // console.log(images)
+    const navigate=useNavigate("/camera")
   return (
     <>
     <div className={styles.home_page}>

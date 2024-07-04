@@ -11,6 +11,10 @@ function App() {
   return (
     <>
     <div className={styles.main_container}>
+      <div className={styles.circle_animate}>
+        <div className={styles.circle}></div>
+        {/* <div className={styles.circle}></div> */}
+      </div>
         <Routing />
     </div>
     </>

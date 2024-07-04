@@ -161,6 +161,7 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
                             </div>
                         )
                     })}
+                    {imagesData.length==0 && <h2>No filter found</h2>}
                     {/* <div className={styles.hero_image}>
                     <img src="./superHero/superHeroCards/superHeroCard-01.jpg" alt="hero-image" />
                 </div>

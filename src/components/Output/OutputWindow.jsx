@@ -106,7 +106,7 @@ function OutputWindow({url,setUrl,generatedImage}) {
       <div className={styles.output_window} id='my-app'>
       
           <div className={styles.home_button}>
-            <button>Home</button>
+            <button onClick={()=>navigate("/")}>Home</button>
           </div>
         <div className={styles.output_wrapper}>
           <h2>{generatedImage ? "Ready to Download" : "Please Wait.."}</h2>

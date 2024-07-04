@@ -230,6 +230,6 @@ export const caricature = [
         id:24,
         imageSrc:image22,
         originalSrc:originalImage24,
-        gender:'male'
+        gender:'female'
     },
 ]
