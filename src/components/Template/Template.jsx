@@ -157,7 +157,7 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
                         console.log(id)
                         return (
                             <div className={styles.hero_image} key={id} onClick={() => setSelectedId(id)}>
-                                {/* <i class="fa fa-check-circle" style="font-size:48px;color:red"></i> */}
+                                {selectedId==id &&  <i className="fa fa-check-circle" ></i> } 
                                     <img src={imageSrc} alt="hero-image" className={selectedId == id ? styles.selected_img : ""} />
                             </div>
                         )

@@ -40,6 +40,13 @@
     left: 0;
 }
 
+.hero_image i{
+    position: absolute;
+    bottom: 5vw;
+    left: 12vw;
+    /* background-color: yellow; */
+    color: yellow !important;
+}
 
 .hero_image img{
     /* box-shadow: 0.3vw 0.2vw 1vw blue; */
