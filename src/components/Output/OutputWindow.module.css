@@ -185,7 +185,7 @@
 .home_button{
     position: absolute;
     top: 3vw;
-    left: 5vw;
+    right: 5vw;
 }
 
 .home_button button{

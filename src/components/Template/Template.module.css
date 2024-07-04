@@ -35,7 +35,11 @@
 
 .hero_image{
     width: 27.7vw;
+    position: relative;
+    top: 0;
+    left: 0;
 }
+
 
 .hero_image img{
     /* box-shadow: 0.3vw 0.2vw 1vw blue; */
@@ -51,17 +55,18 @@
 }
 
 .button_start button{
-    width: 100%;
+    width: 35vw;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1.2vw;
     outline: none;
+    border-radius: 0.41vw;
+    border: none;
     border: 2px solid var(--textColor);
     background-color: var(--buttonBg);
-    padding: 2.2vw 5vw;
-    font-size: 4.5vw;
-    text-transform: capitalize;
-    border-radius: 0.55vw;
     color: #b4cfe7;
     cursor: pointer;
-    font-weight: bold;
 }
 
 .button_start button:hover{
@@ -76,7 +81,7 @@
 }
 
 .selected_img{
-    border: 0.9vw solid rgb(168, 38, 207) !important;
+    border: 0.9vw solid rgb(228, 225, 39) !important;
 }
 
 .more_category_wrapper{

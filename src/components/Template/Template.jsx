@@ -135,7 +135,7 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
                     <button>anime</button>
                     <button>hair style</button>     */}
                         <select name="" id="" onChange={handleCategory} value={category}>
-                            <option value="">select category</option>
+                            {/* <option value="">select category</option> */}
                             <option value="superHero">Super Hero</option>
                             {/* <option value="">Anime</option> */}
                             <option value="hairStyle">Hair Style</option>
@@ -157,7 +157,8 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
                         console.log(id)
                         return (
                             <div className={styles.hero_image} key={id} onClick={() => setSelectedId(id)}>
-                                <img src={imageSrc} alt="hero-image" className={selectedId == id ? styles.selected_img : ""} />
+                                {/* <i class="fa fa-check-circle" style="font-size:48px;color:red"></i> */}
+                                    <img src={imageSrc} alt="hero-image" className={selectedId == id ? styles.selected_img : ""} />
                             </div>
                         )
                     })}

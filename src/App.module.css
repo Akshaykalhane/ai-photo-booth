@@ -72,7 +72,7 @@ body::before{
     flex-wrap: wrap;
     gap: 1.3vw;
     margin-top: 5vw;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 }
 
 .hero_image{
@@ -89,7 +89,7 @@ body::before{
 .button_start{
     width: 30vw;
     /* border: 2px solid red; */
-    margin: 4vw auto;
+    margin: 1vw auto;
 }
 
 .button_start button{
