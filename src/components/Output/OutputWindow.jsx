@@ -125,7 +125,7 @@ function OutputWindow({url,setUrl,generatedImage}) {
             >
               <div className={styles.qrcode_wrapper}>
                 <div className={styles.qrcode_code}>
-                 {url ?<QRCode size={250} value={url} /> : <p>please wait..</p> } 
+                 {url ?<QRCode size={130} value={url} /> : <p>please wait..</p> } 
                 </div>
                 <div className={styles.qrcode_bottom}>
                   <h2>Scan , Share , Download</h2>

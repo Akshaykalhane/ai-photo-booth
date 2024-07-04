@@ -89,9 +89,9 @@
 }
 
 .custom_modal{
-    width: 60vw;
+    width: 80vw;
     /* height: 50vw; */
-    padding: 5vw;
+    padding: 6vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -109,14 +109,14 @@
     outline: none;
     border: 2px solid #000;
     border-radius: 0.5vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .button_email{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1vw;
+    margin-top: 3vw;
 }
 
 .button_email button{
@@ -124,7 +124,7 @@
     width: 20vw;
     padding: 1.2vw;
     border: 2px solid var(--textColor);
-    font-size: 2.2vw;
+    font-size: 2.9vw;
     color: var(--textColor);
     background-color: var(--buttonBg);
     border-radius: 1.3vw;
@@ -138,7 +138,7 @@
 
 .qrcode_wrapper{
     width: 100%;
-    padding: 2vw;
+    padding: 3vw 5vw;
 }
 
 .qrcode_code{
@@ -148,13 +148,16 @@
     align-items: center;
     justify-content: center;
 }
+.qrcode_code p{
+    font-size: 3vw;
+}
 .qrcode_bottom{
     text-align: center;
     margin-top: 4vw;
 }
 
 .qrcode_bottom h2{
-    font-size: 3vw;
+    font-size: 4vw;
     color: #b1daeb;
 }
 
@@ -171,13 +174,13 @@
     outline: none;
     border: none;
     border: 2px solid var(--textColor);
-    font-size: 1.2vw;
+    font-size: 3.2vw;
     position: absolute;
     top: 2vw;
     right: 2vw;
-    padding: 1.2vw 1.4vw;
+    padding: 1.2vw 2.4vw;
     border-radius: 1vw;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
     color: #000 !important;
 }
@@ -189,15 +192,18 @@
 }
 
 .home_button button{
-    outline: none;
-    width: 20vw;
+    width: 35vw;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
     padding: 1.2vw;
+    outline: none;
+    border-radius: 0.41vw;
+    border: none;
     border: 2px solid var(--textColor);
-    font-size: 2.9vw;
-    color: var(--textColor);
     background-color: var(--buttonBg);
-    border-radius: 1.3vw;
-    font-weight: 600;   
+    color: #b4cfe7;
+    cursor: pointer;
 }
 
 .generatedImage{
