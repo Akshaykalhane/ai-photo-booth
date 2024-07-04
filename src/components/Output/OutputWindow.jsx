@@ -141,7 +141,7 @@ function OutputWindow({url,setUrl,generatedImage}) {
                   type='email' 
                   value={userEmail}
                   onChange={(e)=>setUserEmail(e.target.value)}
-                  placeholder='email' />
+                  placeholder='enter your email here..' />
               </div>
               <div className={styles.button_email}>
                 <button onClick={handleSubmit}><ScaleLoader color={"#b4cfe7"} loading={loading} /> {!loading && "Send"}</button>
