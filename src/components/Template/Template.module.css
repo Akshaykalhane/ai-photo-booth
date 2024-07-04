@@ -43,9 +43,10 @@
 .hero_image i{
     position: absolute;
     bottom: 5vw;
-    left: 12vw;
+    left: 10vw;
     /* background-color: yellow; */
     color: yellow !important;
+    font-size: 7vw;
 }
 
 .hero_image img{

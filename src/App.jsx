@@ -16,6 +16,10 @@ function App() {
         {/* <div className={styles.circle}></div> */}
       </div>
         <Routing />
+        <div className={styles.circle_animate2}>
+        <div className={styles.circle}></div>
+        {/* <div className={styles.circle}></div> */}
+      </div>
     </div>
     </>
   )
