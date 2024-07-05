@@ -227,13 +227,13 @@ body::before{
         margin-top: 1vw;
     }
     .button_start{
-        width: 20vw;
+        width: 15vw;
         margin: 1.9vw auto;
         /* border: 2px solid red; */
     }
     .button_start button{
         width: 100%;
-        font-size: 2.7vw;
+        font-size: 1.7vw;
     }
 }
 

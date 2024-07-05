@@ -56,6 +56,7 @@
     width: 100%;
     border-radius: 1.8vw;
     border: 3px solid var(--textColor);
+    transition: transform 0.5s ease-in-out;
 }
 
 .button_start{
@@ -88,15 +89,17 @@ button:disabled{
     transition: all 0.5s ease-in-out;
 }
 
-.hero_image img:hover{
+.hero_image:hover img{
     box-shadow: 0vw 0vw 1.5vw #054988;
     /* transform: rotate(1deg); */
     transform: scale(1.1);
-    transition: all 0.3s ease-in;
+    /* transition: all .3s ease; */
+    cursor: pointer;
 }
 
 .selected_img{
     border: 0.9vw solid rgb(228, 225, 39) !important;
+    transform: scale(1.1);
 }
 
 .more_category_wrapper{
