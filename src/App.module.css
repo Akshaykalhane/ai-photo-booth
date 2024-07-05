@@ -22,9 +22,16 @@ body{
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    width: 100vw;
+    /* height: 100dvh; */
+
+    /* min-height: 100vw; */
+    max-width: 100vw;
+    overflow: hidden;
+    /* height: 100vh; */
     background-size: cover;
+    /* overflow: hidden; */
     /* font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -160,5 +167,169 @@ body::before{
     100%{
         opacity: 0;
         transform: scale(0);
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    body{
+        /* border: 2px solid red; */
+    }
+    .home_page{
+        /* border: 1px solid red; */
+        /* margin-top: 1vw; */
+    }
+    .home_wrapper{
+        margin-top: 1vw;
+    }
+    .home_page h2{
+        margin: 2vw auto;
+    }
+    .image_wrapper{
+        /* border: 1px solid red; */
+        margin: 3vw auto;
+    }
+}
+
+@media screen  and (min-width:760px) and (max-width:990px){
+    body{
+        height: 100vh;
+        overflow: hidden;
+        /* border: 4px solid yellow !important; */
+        padding: 1vw;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+    }
+    .home_page{
+        width: 100%;
+        padding: 1vw;
+        height: 100%;
+        /* border: 22px solid red !important; */
+        margin-top: 6vw;
+    }
+    .home_page h2{
+        font-size: 4.5vw;
+        margin: 2.9vw auto ;
+    }
+    .image_wrapper{
+        width: 100%;
+        margin: 7.1vw auto;
+        /* margin-top: 1vw !important; */
+        /* border: 2px solid red; */
+        align-items: center;
+        justify-content: center;
+        gap: 1.4vw;
+    }
+    .hero_image{
+        width: 19vw;
+    }
+    .home_wrapper {
+        margin-top: 1vw;
+    }
+    .button_start{
+        width: 20vw;
+        margin: 1.9vw auto;
+        /* border: 2px solid red; */
+    }
+    .button_start button{
+        width: 100%;
+        font-size: 2.7vw;
+    }
+}
+
+
+@media screen and (min-width:991px)  {
+    body{
+        /* height: 100vh; */
+        /* overflow: hidden; */
+        /* border: 4px solid yellow; */
+        padding: 1vw;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+    }
+    .home_page{
+        width: 100%;
+        padding: 0;
+        height: 100%;
+        /* border: 2px solid red; */
+        /* margin-top: 0.1vw; */
+    }
+    .home_page h2{
+        font-size: 4.5vw;
+        margin: 0.9vw auto ;
+    }
+    .image_wrapper{
+        width: 80%;
+        margin: 0.1vw auto;
+        /* margin-top: 1vw !important; */
+        /* border: 2px solid red; */
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+    .hero_image{
+        width: 11vw;
+    }
+    .home_wrapper {
+        margin-top: .1vw;
+    }
+    .button_start{
+        width: 15vw;
+        margin: .9vw auto;
+        /* border: 2px solid red; */
+    }
+    .button_start button{
+        padding: .8vw;
+        width: 100%;
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    body{
+        /* height: 100vh; */
+        /* overflow: hidden; */
+        /* border: 4px solid red !important; */
+        padding: 1vw;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+    }
+    .home_page{
+        width: 100%;
+        padding: 0;
+        height: 100%;
+        /* border: 2px solid red; */
+        margin-top: 1vw;
+    }
+    .home_page h2{
+        font-size: 4.5vw;
+        margin: 3vw auto ;
+    }
+    .image_wrapper{
+        width: 100%;
+        margin: 3.1vw auto;
+        /* margin-top: 1vw !important; */
+        /* border: 2px solid red; */
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .hero_image{
+        width: 14vw;
+    }
+    .home_wrapper {
+        margin-top: 1vw;
+    }
+    .button_start{
+        width: 17vw;
+        margin: 1.5vw auto;
+        /* border: 2px solid red; */
+    }
+    .button_start button{
+        padding: 1vw;
+        width: 100%;
+        font-size: 1.6vw;
     }
 }

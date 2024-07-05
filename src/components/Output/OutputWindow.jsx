@@ -110,6 +110,7 @@ function OutputWindow({url,setUrl,generatedImage}) {
           </div>
         <div className={styles.output_wrapper}>
           <h2>{generatedImage ? "Ready to Download" : "Please Wait.."}</h2>
+          
           {generatedImage && <>
             <div className={styles.download_image_wrapper}>
               {generatedImage && <img src={generatedImage} className={styles.generatedImage} ref={imageRef} alt="" />}
@@ -125,7 +126,7 @@ function OutputWindow({url,setUrl,generatedImage}) {
             >
               <div className={styles.qrcode_wrapper}>
                 <div className={styles.qrcode_code}>
-                 {url ?<QRCode size={130} value={url} /> : <p>please wait..</p> } 
+                 {url ?<QRCode size={255} value={url} /> : <p>please wait..</p> } 
                 </div>
                 <div className={styles.qrcode_bottom}>
                   <h2>Scan , Share , Download</h2>

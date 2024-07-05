@@ -9,11 +9,11 @@
 }
 
 
-body{
+/* body{
     margin: 0;
     padding: 0;
     background-color: rgb(22, 36, 48);
-}
+} */
 
 .main_container{
     width: 100%;
@@ -98,4 +98,109 @@ body{
     color: #b4cfe7;
     text-align: center;
     letter-spacing: 0.2vw;
+}
+
+@media screen and (min-width:760px) and (max-width:990px) {
+    body{
+        /* border: 2px solid red; */
+    }
+    .camera_window{
+        /* border: 2px solid blueviolet; */
+        padding: 1.1vw;
+        width: 100%;
+        margin-top: 10vw;
+    }
+    .camera_screen{
+        width: 45vw;
+        /* border: 2px solid yellow ; */
+        border-width: .4vw;
+        
+        /* margin: 1vw auto; */
+        margin: auto;
+        margin-top: 5vw;
+    }
+    .camera_wrapper{
+        /* border: 2px solid blue; */
+        margin-top: 0;
+    }
+    .title_head{
+        /* border: 2px solid pink; */
+        margin: 0.1vw auto;
+    }
+    .title_head h2{
+        font-size: 4.5vw;
+    }
+
+    .button_control {
+        width: 60%;
+        margin:5vw auto;
+        /* border: 2px solid red; */
+        /* margin: 0; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .button_control button{
+        width: 20vw;
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (min-width:991px) {
+    body{
+        /* border: 2px solid red; */
+        
+    }
+    .camera_window{
+        /* border: 2px solid blueviolet; */
+        padding: .1vw;
+        width: 100%;
+    }
+    .camera_screen{
+        width: 35vw;
+        /* border: 2px solid yellow ; */
+        border-width: .4vw;
+        
+        /* margin: 1vw auto; */
+        margin: auto;
+        margin-top: 2.4vw;
+    }
+    .camera_wrapper{
+        /* border: 2px solid blue; */
+        margin-top: 0;
+    }
+    .title_head{
+        /* border: 2px solid pink; */
+        margin: 1.1vw auto;
+    }
+    .title_head h2{
+        font-size: 3.5vw;
+    }
+
+    .button_control {
+        width: 40%;
+        margin:2vw auto;
+        /* border: 2px solid red; */
+        /* margin: 0; */
+    }
+    .button_control button{
+        width: 14vw;
+        font-size: 1.4vw;
+        padding: 1vw;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    body{
+        /* border: 2px solid red !important; */
+    }
+    .camera_window {
+        /* border: 1px solid red; */
+        margin-top: 4vw;
+    }
+    .camera_screen{
+        margin-top: 5vw;
+        /* border: 2px solid red; */
+    }
 }

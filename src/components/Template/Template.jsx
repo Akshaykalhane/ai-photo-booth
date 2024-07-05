@@ -26,6 +26,7 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
      }
 
     const handleGender = (e) => {
+        // setSelectedId(null)
         const gender = e.target.value;
         // if (category == "superHero") {
         //     const data = superHeroImage.filter((hero) => gender ? hero.gender == gender : hero);
@@ -44,6 +45,7 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
     }
 
     const handleCategory = (e) => {
+        // setSelectedId(null)
         const cat = e.target.value;
         let updateData = data[cat];
         if(gender){
@@ -148,7 +150,6 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
                             <option value="female">Female</option>
                         </select>
                     </div>
-
                 </div>
 
                 <div className={styles.image_wrapper}>
@@ -182,7 +183,7 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
 
                 <div className={styles.button_start}>
                     {/* <Link to='/camera'> */}
-                    <button onClick={handleSubmit} disabled={selectedId + 1 ? false : true}>Generate</button>
+                    <button onClick={handleSubmit} disabled={selectedId==null  ? true : false}>Generate</button>
                     {/* </Link> */}
                 </div>
             </div>

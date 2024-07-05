@@ -230,3 +230,98 @@
         height: auto;
     }
 }
+
+
+
+@media screen and (min-width:991px) {
+    body{
+        /* border: 2px solid red; */
+        
+    }
+    .output_window{
+        width: 100%;
+        /* border: 2px solid yellow; */
+        padding: 1vw;
+    }
+    .home_button{
+        top: 0;
+        right: 1vw;
+    }
+    .home_button button{
+        width: 10vw;
+        font-size: 1.2vw;
+        padding: 0.5vw;
+    }
+    .output_wrapper{
+        padding: 1vw;
+        /* border: 1px solid black; */
+        margin-top: 3vw;
+    }
+    .output_wrapper h2{
+        font-size: 2.5vw;
+    }
+    .download_image_wrapper{
+        width: 20vw;
+        margin: 2vw auto;
+        border: .2vw solid white;
+    }
+    .share_options{
+        margin: 1vw auto;
+        padding: 1vw;
+    }
+    .share_options  button{
+        font-size: 1.2vw;
+        width: 11vw;
+        padding: .5vw;
+        border-radius: .7vw;
+    }
+    .custom_modal{
+        /* width: 40vw; */
+        padding: 1.6vw;
+    }
+    .qrcode_wrapper{
+        /* border: 2px solid yellow; */
+        padding: 4vw 1vw;
+    }
+    .qrcode_code p{
+        font-size: 1.2vw;
+    }
+    .qrcode_bottom h2{
+        font-size: 2.2vw;
+    }
+    .close_button {
+        /* border: 1px solid red; */
+        top: 1vw;
+        font-size: 1.2vw;
+        padding: 1vw 1.5vw;
+    }
+    .email_modal{
+        /* border: 1px solid yellow; */
+        padding: 2vw 2vw 1vw 2vw;
+    }
+    .email_modal input{
+        padding: 1vw;
+        font-size: 1.4vw;
+    }
+    .button_email{
+        /* border: 2px solid red; */
+        margin-top: 0vw;
+        padding: 1vw 2vw 2vw 2vw;
+        justify-content: flex-start;
+        gap: 2vw;
+    }
+    .button_email button{
+        width: 10vw;
+        font-size: 1.3vw;
+        padding: 1vw;
+    }
+    .loading_screen{
+        margin-top: 2vw;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    body{
+        /* border: 2px solid yellow; */
+    }
+}

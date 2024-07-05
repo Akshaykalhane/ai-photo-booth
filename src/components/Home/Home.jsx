@@ -18,7 +18,7 @@ function Home() {
             <div className={styles.image_wrapper}>
                 {images.map((item,id)=>(
                     <div className={styles.hero_image} key={id}>
-                    <img src={item} alt="hero-image" />
+                    <img src={item} alt="hero-image"  />
                 </div>
                 ))}
                 {/* <div className={styles.hero_image}>
