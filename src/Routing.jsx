@@ -68,6 +68,7 @@ function Routing() {
                         setUrl={setUrl}
                         // data={bodyData} 
                         generatedImage={generatedImage}
+                        setGeneratedImage={setGeneratedImage}
                         />} />
             </Routes>
         </BrowserRouter>

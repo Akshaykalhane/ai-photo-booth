@@ -304,23 +304,24 @@ body::before{
         margin-top: 1vw;
     }
     .home_page h2{
-        font-size: 4.5vw;
-        margin: 3vw auto ;
+        font-size: 4vw;
+        margin: 1.5vw auto ;
     }
     .image_wrapper{
         width: 100%;
-        margin: 3.1vw auto;
+        margin: .1vw auto;
         /* margin-top: 1vw !important; */
         /* border: 2px solid red; */
         align-items: center;
         justify-content: center;
-        gap: 2vw;
+        gap: .6vw;
     }
     .hero_image{
-        width: 14vw;
+        width: 13.5vw;
     }
     .home_wrapper {
-        margin-top: 1vw;
+        margin-top: -2vw;
+        /* border: 1px solid yellow; */
     }
     .button_start{
         width: 17vw;

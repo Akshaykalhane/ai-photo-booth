@@ -9,10 +9,11 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from 'react-router-dom';
 
 import { handleDownload } from '../utility/downloadImage';
 
-function OutputWindow({url,setUrl,generatedImage}) {
+function OutputWindow({url,setUrl,generatedImage,setGeneratedImage}) {
 
   const [finalImage, setFinalImage] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -41,6 +42,10 @@ function OutputWindow({url,setUrl,generatedImage}) {
   useEffect(() => {
     setFinalImage(generatedImage);
   }, [generatedImage]);
+
+  useEffect(()=>{
+    setGeneratedImage(null)
+  },[])
 
 
   const toastOptions = {
@@ -101,12 +106,15 @@ function OutputWindow({url,setUrl,generatedImage}) {
   }
 
 
+
   return (
     <>
       <div className={styles.output_window} id='my-app'>
       
           <div className={styles.home_button}>
-            <button onClick={()=>navigate("/")}>Home</button>
+            <Link to={"/"}>
+            <button >Home</button>
+            </Link>
           </div>
         <div className={styles.output_wrapper}>
           <h2>{generatedImage ? "Ready to Download" : "Please Wait.."}</h2>

@@ -197,10 +197,10 @@
     }
     .camera_window {
         /* border: 1px solid red; */
-        margin-top: 4vw;
+        margin-top: 3vw;
     }
     .camera_screen{
-        margin-top: 5vw;
+        margin-top: 2vw;
         /* border: 2px solid red; */
     }
 }
