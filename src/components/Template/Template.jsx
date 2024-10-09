@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import styles from './Template.module.css';
 import { Link } from 'react-router-dom';
 import { superHeroImage, hairStyle ,caricature,professional} from '../images/images';
@@ -7,6 +7,13 @@ import base64 from '../utility/convertBase64';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 // import { image } from 'html2canvas/dist/types/css/types/image';
+
+import { useLocation } from 'react-router-dom';
+import Plausible from 'plausible-tracker';
+
+const plausible = Plausible({
+  domain: 'yourdomain.com',
+});
 
 function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) {
     const [selectedId, setSelectedId] = useState(null);
@@ -17,6 +24,16 @@ function Template({ capturedImage, setGeneratedImage, setUrl, generatedImage }) 
     // const [generatedImage,setGeneratedImage]=useState("");
     // let imagesData = superHeroImage;
     // convertToBase64(superHeroImage[0].originalSrc);
+
+    const location = useLocation();
+
+    useEffect(() => {
+      // Track page view when the route changes
+      plausible.trackPageview({
+        url: location.pathname,
+      });
+      console.log(location,'location');
+    }, [location]);
 
     const data = { 
         superHero:superHeroImage,

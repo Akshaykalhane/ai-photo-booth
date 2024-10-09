@@ -64,6 +64,7 @@ body::before{
     width: 90vw;
     margin: auto;
     /* border: 2px solid red; */
+    
 }
 
 .home_page h2{
@@ -170,7 +171,7 @@ body::before{
     }
 }
 
-@media screen and (min-width:300px) and (max-width:480px) {
+@media screen and (min-width:300px) and (max-width:580px) {
     body{
         /* border: 2px solid red; */
     }
@@ -181,12 +182,17 @@ body::before{
     .home_wrapper{
         margin-top: 1vw;
     }
+    .hero_image{
+        width: 20.5vw;
+        
+    }
     .home_page h2{
         margin: 2vw auto;
     }
     .image_wrapper{
         /* border: 1px solid red; */
         margin: 3vw auto;
+        justify-content: center;
     }
 }
 

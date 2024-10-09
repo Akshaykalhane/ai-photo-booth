@@ -5,11 +5,28 @@ import Home from './components/Home/Home';
 import Template from './components/Template/Template';
 import OutputWindow from './components/Output/OutputWindow';
 
+// import { useLocation } from 'react-router-dom';
+// import Plausible from 'plausible-tracker';
+
+// const plausible = Plausible({
+//   domain: 'yourdomain.com',
+// });
+
+
 function Routing() {
   const [capturedImage,setCapturedImage]=useState(null);
   const [generatedImage,setGeneratedImage]=useState(null);
   const [url,setUrl]=useState(null);
   // const [filterImage,setFilterImage]=useState(null);
+
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   // Track page view when the route changes
+  //   plausible.trackPageview({
+  //     url: location.pathname,
+  //   });
+  // }, [location]);
 
   const handleCapturedImage=(src)=>{
     setCapturedImage(src);
@@ -22,6 +39,7 @@ function Routing() {
   useEffect(()=>{
     console.log(url,'url')
   },[url])
+
 
   // const handleOriginalImage=(src)=>{
   //   const originalImage = new Image();

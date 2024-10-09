@@ -59,12 +59,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-.hero_image img{
-    position: relative;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
+
 
 
 .button_start{

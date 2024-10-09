@@ -5,8 +5,26 @@ import './App.css'
 import styles from './App.module.css'
 import Routing from './Routing'
 import Transition from './components/utility/Transition'
+// import MyApp  from "my-react-component-package"
+// import { useLocation } from 'react-router-dom';
+// import Plausible from 'plausible-tracker';
+
+// const plausible = Plausible({
+//   domain: 'yourdomain.com',
+// });
+
 
 function App() {
+
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   // Track page view when the route changes
+  //   plausible.trackPageview({
+  //     url: location.pathname,
+  //   });
+  // }, [location]);
+
   
   return (
     <>
@@ -14,6 +32,7 @@ function App() {
       <div className={styles.circle_animate}>
         <div className={styles.circle}></div>
         {/* <div className={styles.circle}></div> */}
+        {/* <MyApp /> */}
       </div>
         <Routing />
         <div className={styles.circle_animate2}>

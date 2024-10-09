@@ -1,14 +1,30 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState,useEffect } from 'react'
 import styles from './Camera.module.css'
 import Webcam from "react-webcam"
 import { useNavigate } from 'react-router-dom';
 import convertToBase64 from '../utility/convertBase64';
+
+import { useLocation } from 'react-router-dom';
+import Plausible from 'plausible-tracker';
+
+const plausible = Plausible({
+  domain: 'yourdomain.com',
+});
 
 function CameraWindow({ handleCapturedImage }) {
     const webcamRef = useRef(null);
     const windowRef = useRef(null);
     const navigate = useNavigate();
     const [capturedImage, setCapturedImage] = useState(null);
+    const location = useLocation();
+
+    useEffect(() => {
+      // Track page view when the route changes
+      plausible.trackPageview({
+        url: location.pathname,
+      });
+      console.log(location.pathname,'location');
+    }, [location]);
     const handleCapture = (e) => {
         if (capturedImage) {
             setCapturedImage(null);

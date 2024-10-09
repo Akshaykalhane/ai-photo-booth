@@ -13,6 +13,13 @@ import { Link } from 'react-router-dom';
 
 import { handleDownload } from '../utility/downloadImage';
 
+import { useLocation } from 'react-router-dom';
+import Plausible from 'plausible-tracker';
+
+const plausible = Plausible({
+  domain: 'yourdomain.com',
+});
+
 function OutputWindow({url,setUrl,generatedImage,setGeneratedImage}) {
 
   const [finalImage, setFinalImage] = useState(null);
@@ -25,6 +32,16 @@ function OutputWindow({url,setUrl,generatedImage,setGeneratedImage}) {
 
   const imageRef=useRef(null);
   const navigate = useNavigate();
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Track page view when the route changes
+    plausible.trackPageview({
+      url: location.pathname,
+    });
+    console.log(location.pathname,'location');
+  }, [location]);
 
 
   const handleModal = (modal) => {
